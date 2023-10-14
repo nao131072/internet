@@ -13,6 +13,11 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {   
+    if(argc<4)
+    {
+        cout<<"Error: missing or additional arguments"<<endl;
+        return 0;
+    }
     string mode=argv[1];
     string serverIP="";
     int port=0;
